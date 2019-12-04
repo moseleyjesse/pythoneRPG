@@ -44,18 +44,18 @@ if answer == "Y" or answer == "y":
 			forest_choice2 = input("")
 
 			if forest_choice2 == "1":
-                print("You get sucked into a time portal and find yourself surrounded by lava. You disintegrate. The end.")
+                print()
 			else:
-				print("At the end of the hallway is a great room with a large table covered in all your favorite foods. Well done!")
+				print()
 
 		else:
-			print("Really? You are changing your mind?! I quit. The end.")
+			print()
 
 	# Desert 2
 	elif location == "2":
-		print("The second house is a small cottage. What do you do?")
-		print("1. Go inside.")
-		print("2. Pick another house.")
+		print()
+		print()
+		print()
 
 		desert_choice1 = input("")
 
@@ -80,7 +80,7 @@ if answer == "Y" or answer == "y":
 		print()
 		print()
 
-		mountain_choice1 = input("> ")
+		mountain_choice1 = input("")
 
 		if mountain_choice1 == "1":
 			print()

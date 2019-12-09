@@ -1,5 +1,6 @@
 import os
 import time
+from characters import *
 
 greeting = "Welcome brave hero! I require your assistance for a quest of sorts... This is only for those strong of will and brave of heart... before we get started, what is your name? "
 y = 0

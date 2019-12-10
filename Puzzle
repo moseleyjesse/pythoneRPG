@@ -1,0 +1,41 @@
+import random
+
+Amount_of_digits = 2
+Amount_of_guesses = 10
+
+secret_number = "".join((str(i) for i in
+    random.sample(range(10), Amount_of_digits)))
+
+
+print(f"Welcome Adventurer! If you wish to continue past this point, then you must guess the correct number")
+
+remaining_turns = Amount_of_guesses
+
+while remaining_turns <= Amount_of_guesses:
+
+    
+    player_guess = input("Please enter your guess: ")
+    if len(player_guess) != Amount_of_digits:
+        print(f"Your guess must be {Amount_of_digits} digits long.")
+        continue
+
+    
+    if player_guess == secret_number:
+        print("Congratulations, you can pass!")
+        break
+    else:
+        bulls = 0
+        cows = 0
+        for i in range(Amount_of_digits):
+            if player_guess[i] == secret_number[i]:
+                bulls += 1
+        for j in range(Amount_of_digits):
+            if player_guess[j] in secret_number and \
+              player_guess[j] != secret_number[j]:
+                cows += 1
+        print(f"Bulls: {bulls}")
+        print(f"Cows: {cows}")
+        remaining_turns -= 1
+        if remaining_turns < 1:
+            print("You lose.")
+            break

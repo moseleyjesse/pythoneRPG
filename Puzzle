@@ -7,7 +7,8 @@ secret_number = "".join((str(i) for i in
     random.sample(range(10), Amount_of_digits)))
 
 
-print(f"Welcome Adventurer! If you wish to continue past this point, then you must guess the correct number")
+greeting = "Welcome Adventurer! If you wish to continue past this point, then you must guess the correct number"
+print greeting)
 
 remaining_turns = Amount_of_guesses
 

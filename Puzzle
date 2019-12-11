@@ -8,7 +8,7 @@ secret_number = "".join((str(i) for i in
 
 
 greeting = "Welcome Adventurer! If you wish to continue past this point, then you must guess the correct number"
-print greeting)
+print (greeting)
 
 remaining_turns = Amount_of_guesses
 
